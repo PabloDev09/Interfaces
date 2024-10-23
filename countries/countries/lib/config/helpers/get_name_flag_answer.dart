@@ -7,7 +7,7 @@ class CountryAnswer {
 
   Future<Message> getAnswer(String name) async
   {
-    final response = await _dio.get('https://restcountries.com/v3.1/name/$name&');
+    final response = await _dio.get('https://restcountries.com/v3.1/name/$name');
 
     if(response.statusCode == 200)
     {
